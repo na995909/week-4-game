@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Crystal Collector</title>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+	<style>
+		.brownbox {
+			background: #91671f;
+			color:white;
+			font-weight: bold;
+			text-align:center;
+			height: 50px;
+			padding: 10px;
+			font-size: 25px;
+ 		}
+ 		.whitebox {
+ 			background: #e5d9ac;
+ 			color:green;
+ 			text-align: left;
+ 			height: 250px;
+ 			padding:10px;
+ 			font-size: 10;
+ 			
+ 		}
+ 		body {
+ 			background-image: url("assets/images/logo_Macro Sugar.jpg");
+ 		}
+ 		.bluebox {
+ 			background: #41d9f4;
+ 			
+ 			text-align: center;
+ 			height: 75px;
+ 			padding: 10px;
+ 			margin-left: 10px;
+ 		}  
+ 		.greenbox {
+ 			background: #48c959;
+ 			height: 75px;
+ 			padding: 10px;
+ 			font-size: 25px;
+ 			color:black;
+
+ 		}
+ 		.totalscorebox {
+ 			background: #1e9174;
+ 			color:white;
+ 			font-size: 10px;
+ 			text-align: left;
+ 			padding: 10px;
+ 		}
+ 		.scorebox {
+ 			background: #1e9174;
+ 			height: 75px;
+ 			color:white;
+ 		}
+	</style>
+</head>
+<body>
+	<div class="container">
+
+    <div class="row row1"><br>
+      <div class="col-md-4 brownbox">CrystalCollector!</div>
+      <div class="col-md-8"></div>
+  </div>
+
+    <div class="row row2"><br>
+       <div class="col-md-6 whitebox">
+       <p> You will be given a new number at the start of the
+       game.</p>
+        <p>  There are four crystals below. By clicking on the crystal you will add a spesific amount of points to your total score. 
+        </p>
+        <p>    You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.
+        </p>	
+        <p>    The value of each crystal is hidden from you until you click on it.
+        </p>
+        <p>    Each time when the starts, the game will change the values of each crystal. 
+
+        </p>
+        </div>
+        <div class="col-md-6"></div>
+    </div>
+    <div class="row row3"><br>
+		<div class="col-md-3 greenbox"></div>
+		<div class="col-md-2 bluebox"><span>wins:</span><span id="w">0</span></br>
+		                      <span>losses:</span><span id="l">0</span></div>
+		<div class="col=md-7"></div>                    
+
+	</div>	
+	<div class="row row4"><br>
+		<div class="col-md-1 redcrystal">
+		<img id="red" class="btn" height="70px" width="75px" src="assets/images/red_crystal.jpg" style="border: 1px solid black">
+		</div>
+		<div class="col-md-1 bluecrystal">
+		<img  id="blue" class="btn" height="70px" width="75px" src="assets/images/blue_crystal.jpg" style="border: 1px solid black">
+		</div>
+		<div class="col-md-1 yellowcrystal">
+		<img id="yellow" class="btn" height="70px" width="75px" src="assets/images/yellow_crystal.jpg" style="border: 1px solid black">
+		</div>
+		<div class="col-md-1 greencrystal">
+		<img  id="green" class="btn" height="70px" width="75px" src="assets/images/green_crystal.jpg" style="border: 1px solid black">
+		</div>
+		<div class="col-md-8"></div>
+
+	</div>	
+		<div class="row row5"><br>
+		<div class="col-md-3 totalscorebox">Your total score is:</div>	
+		<div class="col-md-9"></div>
+	</div>
+	    <div class="row row6"><br>
+	   <div class="col-md-3 scorebox">0</div>
+	   <div class="col-md-9"></div>
+	</div>
+
+
+
+</div>
+
+			
+
+
+</body>
+</html>
