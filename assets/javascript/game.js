@@ -29,11 +29,11 @@ function init() {
 		console.log($(this).val());
 
 	});
-
-	/*$("#red").val(Math.floor(Math.random()*11+1));
-	$("#blue").val(Math.floor(Math.random()*11+1));
-	$("#yellow").val(Math.floor(Math.random()*11+1));
-	$("#green").val(Math.floor(Math.random()*11+1));
+    // another version of the code
+	/*$("#red").val(Math.floor(Math.random()*12+1));
+	$("#blue").val(Math.floor(Math.random()*12+1));
+	$("#yellow").val(Math.floor(Math.random()*12+1));
+	$("#green").val(Math.floor(Math.random()*12+1));
 	console.log($("#red").val());
 	console.log($("#blue").val());
 	console.log($("#yellow").val());
