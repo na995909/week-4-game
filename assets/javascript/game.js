@@ -22,10 +22,10 @@ $(document).ready(function() {
 
 function init() {
 
-	$(".greenbox").text(Math.floor(Math.random()*101+19));
+	$(".greenbox").text(Math.floor(Math.random()*102+19));
 	$(".scorebox").text(0);
 	$(".btn").each(function() {
-		$(this).val(Math.floor(Math.random()*11+1));
+		$(this).val(Math.floor(Math.random()*12+1));
 		console.log($(this).val());
 
 	});
